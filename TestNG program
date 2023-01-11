@@ -1,0 +1,59 @@
+package Automation;
+
+ 
+
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Ignore;
+
+public class FirstTestNG {
+
+ 
+
+ 
+
+    /*@BeforeSuite
+    @AfterSuite
+    @BeforeTest
+    @AfterTest
+    @BeforeClass
+    @AfterClass
+    @BeforeMethod
+    @AfterMethod
+    @Ignore*/
+
+ 
+
+        @Test (priority=3)
+      public void a() {
+        System.out.println("This is a method");
+      }
+
+ 
+
+    @Test (priority = 0)
+    public void finalMethod() {
+        System.out.println("This is test with 0");
+    }
+
+    @Test (priority=4)
+    public void b() {
+        System.out.println("This is b method");
+    }
+
+    @Test (priority=1)
+    public void c() {
+        System.out.println("This is c method");
+    }
+
+    @Test 
+    public void c1() {
+        System.out.println("This is c1 method");
+    }
